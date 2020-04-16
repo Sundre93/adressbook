@@ -18,7 +18,7 @@
     <div class="row">
         <div class="col">
             <ul class="list-group">
-                <li  class="list-group-item"> Peter Müller <input onclick="fillForm2()" type="button" class="btn btn-secondary" value="Kontakt anzeigen"> </li>
+                <li  class="list-group-item"> Peter Müller <input onclick="fillForm()" type="button" class="btn btn-secondary" value="Kontakt anzeigen"> </li>
                 <li  class="list-group-item"> <a href="#"> Heinz Peter </a>  </li>
                 <li  class="list-group-item"> <a href="#"> Franziska Sommer </a> </li>
                 <li  class="list-group-item"> <a href="#"> Paul Winter</a>  </li>
@@ -43,31 +43,30 @@
                 <div class="form-row">
                     <div class="form-group col-md-8">
                         <label for="kontakt-form-email"> e-mail </label>
-                        <input type="email" class="form-control" id="kontakt-form-email" value="xy@gmx.de">
+                        <input type="email" class="form-control" name="email" id="kontakt-form-email" value="">
                     </div>
                 </div>
 
                 <div class="form-row adresse">
                     <div class="form-group col-md-8">
                         <label for="kontakt-form-address"> address </label>
-                        <input type="text" class="form-control" id="kontakt-form-address" placeholder="1234 Main St">
+                        <input type="text" class="form-control" name="address" id="kontakt-form-address" placeholder="1234 Main St">
                     </div>
                 </div>
 
                 <div class="form-row ">
                     <div class="form-group col-md-6">
                         <label for="kontakt-form-stadt"> city </label>
-                        <input type="text" class="form-control" id="kontakt-form-stadt">
+                        <input type="text" class="form-control" name="stadt" id="kontakt-form-stadt">
                     </div>
 
                     <div class="form-group col-md-4">
                         <label for="kontakt-form-plz"> zip </label>
-                        <input type="text" class="form-control" id="kontakt-form-plz">
+                        <input type="text" class="form-control" name="plz" id="kontakt-form-plz">
                     </div>
                 </div>
 
-                <button onclick="updateForm()" name="button" type="submit" class="btn btn-secondary"> Aktualisieren</button>
-                <input type="button"
+                 <input onclick="updateForm()" class="btn btn-secondary" name="button" type="submit" value="aktualisieren">
             </form>
         </div>
     </div>
@@ -78,7 +77,7 @@
 
     <!-- Optional JavaScript -->
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
